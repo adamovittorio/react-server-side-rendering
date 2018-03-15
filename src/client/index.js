@@ -1,4 +1,4 @@
-/* global document */
+/* global document, window */
 import 'babel-polyfill';
 import React from 'react';
 import ReactDom from 'react-dom';
@@ -14,7 +14,7 @@ import Routes from './Routes';
 
 const store = createStore(
   reducers,
-  {},
+  window.INITIAL_STATE,
   applyMiddleware(thunk),
 );
 
