@@ -1,8 +1,8 @@
-import { FETCH_ADMINS } from '../actions';
+import { FETCH_USERS } from '../actions';
 
 export default (state = [], action) => {
   switch (action.type) {
-    case FETCH_ADMINS:
+    case FETCH_USERS:
       return action.payload.data;
     default:
       return state;
